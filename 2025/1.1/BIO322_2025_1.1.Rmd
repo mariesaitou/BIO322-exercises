@@ -6,7 +6,7 @@ output: html_document
 
 # 1. Comparative Genomics
 
-1. From each of the following Ensembl genome databases, choose **at least one species** per potal.
+**Q1** From each of the following Ensembl genome databases, choose **at least one species** per potal.
 
 
 | Portal                                                  | Description                                                                                                                                     |
@@ -20,16 +20,16 @@ output: html_document
 
 
 
-2. Provide a concise description (2–3 sentences) for each species explaining what kind of organism it is and any relevant biological or ecological context. 
+**Q2** Provide a concise description (2–3 sentences) for each species explaining what kind of organism it is and any relevant biological or ecological context. 
 
-3. For each selected species, gather the following data:
+**Q3** For each selected species, gather the following data:
    - Genome size
    - Chromosome number (For bacteria, usually their chromosome is one long,  molecule of double stranded DNA.)
    - Number of coding genes  
    
-4. Create a figure (e.g., bar chart, scatter plot, bubble chart) that visually compares the species across the gathered metrics. 
+**Q4** Create a figure (e.g., bar chart, scatter plot, bubble chart) that visually compares the species across the gathered metrics. 
 
-5. Discuss the following reflective questions under the figure:
+**Q5** Discuss the following reflective questions under the figure:
    - What trends do you observe in genome size relative to chromosome number or coding gene count?
    - Are there any  unexpected patterns among the selected species? What might explain them?
 
@@ -41,6 +41,8 @@ output: html_document
 # 2. Gene duplication simulation
 
 This exercise is mainly about understanding and interpreting gene sequences and phylogenetic trees, rather than focusing on running the script itself. If you happen to run into technical problems or error messages that are difficult to solve, please don’t worry, simply switch to the provided datasets and continue the discussion from there.
+
+If you are interested, you may read the comments in the script, where the purpose of each part is explained.
 
 
 
@@ -54,20 +56,25 @@ We use three species:
 - **Horse (outgroup)**
 
 
+
+
+![](../../images/horse_tree.png){width=50%}
+
+
+ ============================================================
+ Gene-family simulation 
+ Time unit: Myr (million years)
+ Tips produced:
+   Horse_gene1
+   Unicorn_gene1a, Unicorn_gene1b
+   Pegasus_gene1a, Pegasus_gene1b, Pegasus_gene1c
+ Outputs: FASTA, p-distance (TSV), NJ tree (Newick), PDF plot
+ ============================================================
+
+
 ```{r,eval=FALSE}
 
-## ============================================================
-## Gene-family simulation with an ancient duplication
-## + a recent Pegasus-specific duplication (within gene1b lineage)
-## Time unit: Myr (million years)
-## Tips produced:
-##   Horse_gene1
-##   Unicorn_gene1a, Unicorn_gene1b
-##   Pegasus_gene1a, Pegasus_gene1b, Pegasus_gene1c
-## Outputs: FASTA, p-distance (TSV), NJ tree (Newick), PDF plot
-## ============================================================
-
-set.seed(42) # Change the number to your group number
+set.seed(42) # Change the number to your group number if you like
 
 ## ---------------- 1) Branch lengths (Myr) -------------------
 ## All time parameters unified here
@@ -224,8 +231,6 @@ cat(sprintf("FASTA written: %s (n=%d, L=%d)\n", fasta_file, length(seqs), L))
 
 ```
 
-https://alignmentviewer.org/
-
 
 
 ```{r,eval=FALSE}
@@ -277,4 +282,41 @@ cat(sprintf("Tree plot saved: %s\n", plot_file))
 
 cat("Done.\n")
 ```
+
+
+
+## Assignment Tasks
+
+**Q1** Open the sim_tree_plot.pdf and discuss the gene evolution history.
+
+Add the labels gene1a, gene1b, etc. to the given tree diagram (png.file), according to the scenario (Which tip corresponds to which gene?). 
+
+![](../../images/horse_tree.png){width=50%}
+
+
+**Q2** On the sim_tree_plot.pdf, show where gene duplication events occurred and where speciation events occurred.
+
+**Q3** For the gene copies in the tree, indicate which pairs are paralogs, which are orthologs, and which are simply homologs.
+
+
+**Q4** Visualise the FASTA alignment (sim_gene_family.fasta) at (https://alignmentviewer.org/), identify and illustrate a few examples of sites, such as:
+
+ - Conserved sites: positions where all sequences share the same nucleotide.
+
+ - Variable sites: positions where sequences differ, without a clear species- or lineage-specific pattern.
+
+ - Lineage-specific substitutions: positions where a change is unique to one species or one gene copy.
+
+Highlight these sites in the alignment screenshot and explain what they might tell us about evolutionary history.
+
+
+
+
+**Q5** Write a short discussion reflecting on the results. For example, but not limited to:
+
+ - How do duplication and speciation events shape the gene tree?
+
+ - What can we infer from the alignment about evolutionary relationships?
+
+ - Were there any surprising observations?
 
