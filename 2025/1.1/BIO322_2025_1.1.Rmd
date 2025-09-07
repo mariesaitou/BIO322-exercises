@@ -42,6 +42,16 @@ output: html_document
 
 This exercise is mainly about understanding and interpreting gene sequences and phylogenetic trees, rather than focusing on running the script itself. If you happen to run into technical problems or error messages that are difficult to solve, please don’t worry, simply switch to the provided datasets and continue the discussion from there.
 
+
+- [FASTA sequences](sim_gene_family.fasta)
+- [Tree plot (PDF)](sim_tree_plot.pdf)
+
+- [Pairwise p-distance (optional)](sim_p_distance.tsv)
+- [NJ tree (optional)](sim_tree_nj.nwk)
+
+
+
+
 If you are interested, you may read the comments in the script, where the purpose of each part is explained.
 
 
