@@ -4,6 +4,12 @@ output: html_document
 ---
 
 
+Each group is expected to submit a written report of about 2–3 pages in Word format.
+
+Please also include a short statement on the contributions of each group member.
+
+
+
 # 1. Comparative Genomics
 
 **Q1** From each of the following Ensembl genome databases, choose **at least one species** per potal.
