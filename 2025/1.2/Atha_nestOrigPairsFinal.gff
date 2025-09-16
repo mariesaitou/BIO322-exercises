@@ -1,0 +1,23 @@
+##gff-version 3
+1	feature	nested_repeat	15492107	15503782	.	.	.	ID=TE_BASE_106;name=TE_BASE_106;annotation=Class_I|LTR|Ty3/gypsy|non-chromovirus|OTA|Athila;position=nested
+1	feature	polypeptide_conserved_region	15496804	15497473	.	+	.	ID=DOMAIN 106-2;Parent=TE_BASE_106;name=RT
+1	feature	polypeptide_conserved_region	15498457	15499294	.	+	.	ID=DOMAIN 106-4;Parent=TE_BASE_106;name=INT
+1	feature	polypeptide_conserved_region	15497611	15497830	.	+	.	ID=DOMAIN 106-3;Parent=TE_BASE_106;name=RNaseH
+1	feature	polypeptide_conserved_region	15495731	15496013	.	+	.	ID=DOMAIN 106-1;Parent=TE_BASE_106;name=AP
+1	feature	polypeptide_conserved_region	15493961	15494447	.	+	.	ID=DOMAIN 106-0;Parent=TE_BASE_106;name=GAG
+1	feature	repeat_fragment	15492107	15503782	.	.	.	ID=TE 106;Parent=TE_BASE_106;name=TE 106
+1	feature	long_terminal_repeat	15492107	15492421	.	.	.	ID=LTR LEFT 106-0;Parent=TE_BASE_106;name=ltr left
+1	feature	long_terminal_repeat	15503468	15503782	.	.	.	ID=LTR RIGHT 106-0;Parent=TE_BASE_106;name=ltr right
+1	feature	RR_tract	15503439	15503453	.	.	.	ID=PPT 106;Parent=TE_BASE_106;name=ppt
+1	feature	nested_repeat	15486533	15509396	.	.	.	ID=TE_BASE_375;name=TE_BASE_375;annotation=Class_I|LTR|Ty3/gypsy|non-chromovirus|OTA|Athila;position=original
+1	feature	polypeptide_conserved_region	15506740	15507226	.	-	.	ID=DOMAIN 375-4;Parent=TE_BASE_375;name=GAG
+1	feature	polypeptide_conserved_region	15490207	15490570	.	-	.	ID=DOMAIN 375-1;Parent=TE_BASE_375;name=RNaseH
+1	feature	polypeptide_conserved_region	15488998	15489844	.	-	.	ID=DOMAIN 375-0;Parent=TE_BASE_375;name=INT
+1	feature	polypeptide_conserved_region	15505189	15505471	.	-	.	ID=DOMAIN 375-3;Parent=TE_BASE_375;name=AP
+1	feature	polypeptide_conserved_region	15490751	15491453	.	-	.	ID=DOMAIN 375-2;Parent=TE_BASE_375;name=RT
+1	feature	repeat_fragment	15486533	15492107	.	.	.	ID=TE 375;Parent=TE_BASE_375;name=TE 375
+1	feature	repeat_fragment	15503782	15509396	.	.	.	ID=TE 375;Parent=TE_BASE_375;name=TE 375
+1	feature	long_terminal_repeat	15509315	15509396	.	.	.	ID=LTR RIGHT 375-0;Parent=TE_BASE_375;name=ltr right
+1	feature	long_terminal_repeat	15486533	15486614	.	.	.	ID=LTR LEFT 375-0;Parent=TE_BASE_375;name=ltr left
+1	feature	target_site_duplication	15486528	15486532	.	.	.	ID=TSR LEFT 375;Parent=TE_BASE_375;name=tsr left
+1	feature	target_site_duplication	15509397	15509401	.	.	.	ID=TSR RIGHT 375;Parent=TE_BASE_375;name=tsr right
