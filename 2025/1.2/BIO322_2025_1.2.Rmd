@@ -11,7 +11,55 @@ Please also include a short statement on the contributions of each group member.
 
 # Nested TE - TE in another TE 
 
+![](TE4.png){width=80%}
 
+RT (Reverse Transcriptase): Converts RNA back into DNA. 
+IN (Integrase): Cuts the host DNA and joins the TE DNA to it.
+EN (Endonuclease): Makes a nick (cut) in the host DNA, providing an entry site for the TE.
+
+
+
+
+[Atha_nestOrigPairsFinal.gff](Atha_nestOrigPairsFinal.gff)
+
+
+The file is in GFF (General Feature Format), a standard format to describe genomic features.
+
+Each row is one annotated feature (e.g., a repeat element, a conserved protein domain).
+
+Columns are separated by tabs and always follow the same order.
+
+GFF column structure
+Column	Meaning
+seqid	The sequence (chromosome, scaffold, or contig) where the feature is found
+source	The program or annotation source
+type	The feature type (e.g., nested_repeat, polypeptide_conserved_region)
+start	Start position of the feature (1-based)
+end	End position of the feature
+score	A numeric score (often “.” if not used)
+strand	Which DNA strand (+ or -)
+phase	Reading frame information for CDS features (often “.” here)
+attributes	Additional details (ID, Parent, name, annotation, etc.)
+Example features inside this file
+Type	Example attributes
+nested_repeat	`ID=TE_BASE_106; name=TE_BASE_106; annotation=Class_I
+polypeptide_conserved_region	ID=DOMAIN 106-2; Parent=TE_BASE_106; name=RT (reverse transcriptase domain)
+polypeptide_conserved_region	ID=DOMAIN 106-3; Parent=TE_BASE_106; name=RNaseH
+polypeptide_conserved_region	ID=DOMAIN 106-4; Parent=TE_BASE_106; name=INT (integrase domain)
+polypeptide	A longer protein-coding feature related to the TE
+
+
+
+
+How to read the file in context
+
+nested_repeat marks the main TE insertion (e.g., an LTR retrotransposon).
+
+Inside it, several conserved protein domains are annotated.
+
+The annotation field shows TE classification (for example, Class I → LTR → Ty3/gypsy → Athila).
+
+The Parent attribute links each conserved domain back to its TE.
 
 
 
@@ -371,7 +419,6 @@ A peak in the histogram therefore represents a wave of transposition activity: m
 
 
 
-
 # TE generation and mutation simulation
 
 In this exercise, we simulate the proliferation and mutation of transposable element (TE) copies over evolutionary time. Each copy is represented as a short DNA sequence that can mutate at every generation. New copies are introduced at specified time points (bursts), and all sequences accumulate substitutions with a fixed mutation rate.
@@ -552,6 +599,14 @@ print(resB$plot)
 ```
 </details> 
 
+
+
+In case you need output files...
+
+[scenario_A.tsv](scenario_A_lateBurst_summary.tsv)
+
+[scenario_B.tsv](scenario_B_constant_summary.tsv)
+
 **Q7**. Using the TSV file, plot the divergence (Hamming count) against copy age as a boxplot. Discuss the result.
 
 
@@ -605,9 +660,19 @@ print(p_box2)
 </details> 
 
 **Q8** 
+
+In case you need output files...
+
+[scenario_A_lateBurst_hist_stack.png](scenario_A_lateBurst_hist_stack.png)
+
+[scenario_B_constant_hist_stack.png](scenario_B_constant_hist_stack.png)
+
+
 Compare Scenario A (late burst) and Scenario B (constant bursts). 
 
-Which scenario produces a clearer separation between young and old copies in terms of divergence? Explain why the difference arises, referring to the timing of bursts and the accumulation of mutations.
+Which scenario produces a clearer separation between young and old copies in terms of divergence? 
+
+Explain why the difference arises, referring to the timing of bursts and the accumulation of mutations.
 
 
 
