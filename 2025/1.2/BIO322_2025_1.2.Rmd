@@ -27,26 +27,26 @@ The file is in GFF (General Feature Format), a standard format to describe genom
 
 Each row is one annotated feature (e.g., a repeat element, a conserved protein domain).
 
-Columns are separated by tabs and always follow the same order.
+| Column     | Meaning                                                                 |
+|------------|--------------------------------------------------------------------------|
+| seqid      | The sequence (chromosome, scaffold, or contig) where the feature is found |
+| source     | The program or annotation source                                         |
+| type       | The feature type (e.g., nested_repeat, polypeptide_conserved_region)     |
+| start      | Start position of the feature (1-based)                                  |
+| end        | End position of the feature                                              |
+| score      | A numeric score (often “.” if not used)                                  |
+| strand     | Which DNA strand (+ or -)                                                |
+| phase      | Reading frame information for CDS features (often “.” here)              |
+| attributes | Additional details (ID, Parent, name, annotation, etc.)                  |
 
-GFF column structure
-Column	Meaning
-seqid	The sequence (chromosome, scaffold, or contig) where the feature is found
-source	The program or annotation source
-type	The feature type (e.g., nested_repeat, polypeptide_conserved_region)
-start	Start position of the feature (1-based)
-end	End position of the feature
-score	A numeric score (often “.” if not used)
-strand	Which DNA strand (+ or -)
-phase	Reading frame information for CDS features (often “.” here)
-attributes	Additional details (ID, Parent, name, annotation, etc.)
-Example features inside this file
-Type	Example attributes
-nested_repeat	`ID=TE_BASE_106; name=TE_BASE_106; annotation=Class_I
-polypeptide_conserved_region	ID=DOMAIN 106-2; Parent=TE_BASE_106; name=RT (reverse transcriptase domain)
-polypeptide_conserved_region	ID=DOMAIN 106-3; Parent=TE_BASE_106; name=RNaseH
-polypeptide_conserved_region	ID=DOMAIN 106-4; Parent=TE_BASE_106; name=INT (integrase domain)
-polypeptide	A longer protein-coding feature related to the TE
+
+| Type                         | Example attributes                                                                 |
+|------------------------------|-------------------------------------------------------------------------------------|
+| nested_repeat                | `ID=TE_BASE_106; name=TE_BASE_106; annotation=Class_I`                             |
+| polypeptide_conserved_region | `ID=DOMAIN 106-2; Parent=TE_BASE_106; name=RT (reverse transcriptase domain)`      |
+| polypeptide_conserved_region | `ID=DOMAIN 106-3; Parent=TE_BASE_106; name=RNaseH`                                 |
+| polypeptide_conserved_region | `ID=DOMAIN 106-4; Parent=TE_BASE_106; name=INT (integrase domain)`                 |
+| polypeptide                  | A longer protein-coding feature related to the TE                                  |
 
 
 

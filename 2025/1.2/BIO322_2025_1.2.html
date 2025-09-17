@@ -369,22 +369,92 @@ site for the TE.</p>
 describe genomic features.</p>
 <p>Each row is one annotated feature (e.g., a repeat element, a
 conserved protein domain).</p>
-<p>Columns are separated by tabs and always follow the same order.</p>
-<p>GFF column structure Column Meaning seqid The sequence (chromosome,
-scaffold, or contig) where the feature is found source The program or
-annotation source type The feature type (e.g., nested_repeat,
-polypeptide_conserved_region) start Start position of the feature
-(1-based) end End position of the feature score A numeric score (often
-“.” if not used) strand Which DNA strand (+ or -) phase Reading frame
-information for CDS features (often “.” here) attributes Additional
-details (ID, Parent, name, annotation, etc.) Example features inside
-this file Type Example attributes nested_repeat `ID=TE_BASE_106;
-name=TE_BASE_106; annotation=Class_I polypeptide_conserved_region
-ID=DOMAIN 106-2; Parent=TE_BASE_106; name=RT (reverse transcriptase
-domain) polypeptide_conserved_region ID=DOMAIN 106-3;
-Parent=TE_BASE_106; name=RNaseH polypeptide_conserved_region ID=DOMAIN
-106-4; Parent=TE_BASE_106; name=INT (integrase domain) polypeptide A
-longer protein-coding feature related to the TE</p>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="86%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>seqid</td>
+<td>The sequence (chromosome, scaffold, or contig) where the feature is
+found</td>
+</tr>
+<tr class="even">
+<td>source</td>
+<td>The program or annotation source</td>
+</tr>
+<tr class="odd">
+<td>type</td>
+<td>The feature type (e.g., nested_repeat,
+polypeptide_conserved_region)</td>
+</tr>
+<tr class="even">
+<td>start</td>
+<td>Start position of the feature (1-based)</td>
+</tr>
+<tr class="odd">
+<td>end</td>
+<td>End position of the feature</td>
+</tr>
+<tr class="even">
+<td>score</td>
+<td>A numeric score (often “.” if not used)</td>
+</tr>
+<tr class="odd">
+<td>strand</td>
+<td>Which DNA strand (+ or -)</td>
+</tr>
+<tr class="even">
+<td>phase</td>
+<td>Reading frame information for CDS features (often “.” here)</td>
+</tr>
+<tr class="odd">
+<td>attributes</td>
+<td>Additional details (ID, Parent, name, annotation, etc.)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Example attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>nested_repeat</td>
+<td><code>ID=TE_BASE_106; name=TE_BASE_106; annotation=Class_I</code></td>
+</tr>
+<tr class="even">
+<td>polypeptide_conserved_region</td>
+<td><code>ID=DOMAIN 106-2; Parent=TE_BASE_106; name=RT (reverse transcriptase domain)</code></td>
+</tr>
+<tr class="odd">
+<td>polypeptide_conserved_region</td>
+<td><code>ID=DOMAIN 106-3; Parent=TE_BASE_106; name=RNaseH</code></td>
+</tr>
+<tr class="even">
+<td>polypeptide_conserved_region</td>
+<td><code>ID=DOMAIN 106-4; Parent=TE_BASE_106; name=INT (integrase domain)</code></td>
+</tr>
+<tr class="odd">
+<td>polypeptide</td>
+<td>A longer protein-coding feature related to the TE</td>
+</tr>
+</tbody>
+</table>
 <p>How to read the file in context</p>
 <p>nested_repeat marks the main TE insertion (e.g., an LTR
 retrotransposon).</p>
