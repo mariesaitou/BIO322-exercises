@@ -76,7 +76,7 @@ suppressPackageStartupMessages({
   library(ggrepel)
 })
 
-gff <- read_te_gff("Atha_nestOrigPairsFinal.gff")
+
 #--- Read a GFF file and expand the attributes column
 read_te_gff <- function(path) {
   cols <- c("seqid","source","type","start","end","score","strand","phase","attributes")
@@ -115,6 +115,7 @@ read_te_gff <- function(path) {
   })
 
   # Bind rows, missing keys become NA
+  
   parsed_attr <- bind_rows(parsed)
 
   out <- bind_cols(gff %>% select(-attributes), parsed_attr) %>%
@@ -130,7 +131,7 @@ read_te_gff <- function(path) {
   out
 }
 
-gff_tbl <- read_te_gff("Atha_nestOrigPairsFinal.gff")
+gff <- read_te_gff("Atha_nestOrigPairsFinal.gff")
 
 #--- Draw a schematic for a specified Original/Nested TE pair
 plot_te_nesting <- function(gff_tbl, original_id, nested_id, pad_bp = 500) {
