@@ -1,5 +1,5 @@
 ---
-title: "BIO322_2025 Weekly assignment 1.2"
+title: "BIO322_2025 Weekly assignment 1.3"
 output: html_document
 ---
 
@@ -146,20 +146,16 @@ Blocks of many SNPs in the same state (all yellow, all red, or a consistent mix)
 
 
 
-**Q8** 
-
-Why does Hap-II stand out compared to the other haplotypes, and what does its pattern (rows and colors) tell us about the history of this DNA region in domestic sheep?
+**Q8**  Why does Hap-II stand out compared to the other haplotypes, and what does its pattern (rows and colors) tell us about the history of this DNA region in domestic sheep?
 
 
 
-**Q9** 
-
-Search the literature to identify what traits MSRB3 is linked to in sheep or other mammals.
+**Q9**  Search the literature to identify what traits MSRB3 is linked to in sheep or other mammals.
 
 
 **Q10** 
 
 
-Discuss why an introgressed MSRB3 haplotype might have spread in domestic sheep populations.
+- Discuss why an introgressed MSRB3 haplotype might have spread in domestic sheep populations.
 
-Propose a simple experimental plan (a few sentences are enough) to test the role of MSRB3 in shaping ear morphology or other traits.
+- Propose a simple experimental plan (a few sentences are enough) to test the role of MSRB3 in shaping ear morphology or other traits.
