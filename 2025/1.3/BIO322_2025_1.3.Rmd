@@ -101,6 +101,8 @@ At K=8, how does the ancestry pattern of Iranian vs. Turkish sheep change?
 This figure combines results from several genomic analyses to show that a genomic region around the MSRB3 gene was introgressed from argali (wild sheep) into domestic sheep (Oar_v4.0 chr3: 153,800,001–154,380,001).
 
 
+EU_OA (Europe), AM_OA (America), AF_OA (Africa), TR_OA (Turkey), IR_OA (Iran), CN_YNS (Yunnan), CN_WZM (Ujimqin), CN_TAN (Tan), CN_STH (Small-tailed Han), CN_PRT (Prairie Tibetan), CN_VLT (Valley Tibetan), CN_OLA (Tibetan Oula sheep), CN_HU (Hu sheep), CN_CLB (Cele Black sheep), CN_BYK (Bayinbuluke sheep) and AU_MRN (Australian Merino).
+
 
 **Q5** 
 
