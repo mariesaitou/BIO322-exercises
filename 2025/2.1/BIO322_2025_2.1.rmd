@@ -1,6 +1,6 @@
 
 ---
-title: "BIO322_2025 Weekly assignment 1.3"
+title: "BIO322_2025 Weekly assignment 2.1"
 output: html_document
 ---
 
